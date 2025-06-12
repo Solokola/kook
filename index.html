@@ -525,7 +525,17 @@
 	<!-- // Копирайт -->
 
 
-
+           <script>
+    document.getElementById('myButton').addEventListener('click', function() {
+      const quotes = [
+        "Жизнь — это то, что с тобой происходит, пока ты строишь планы. — Джон Леннон",
+        "Будь собой; все остальные роли уже заняты. — Оскар Уайльд",
+        "Каждый день — новая возможность изменить свою жизнь."
+      ];
+      const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById('quote').textContent = randomQuote;
+    });
+  </script>
 
 	
 
