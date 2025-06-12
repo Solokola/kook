@@ -3,6 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const output = document.getElementById('quote');
 
   button.addEventListener('click', function() {
-    output.textContent = "Цитата на сегодня: «Действуй сейчас, не откладывай!»";
+    output.textContent = "Цитата на сьогодні: «Роби зараз, не відкладуй!»";
   });
 });
