@@ -525,7 +525,25 @@
 		</div>
 	</div>
 	<!-- // Копирайт -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const quotes = [
+            "Не бійся досконалості — тобі її не досягти. — Сальвадор Далі",
+            "Великі справи починаються з малого. — Цицерон",
+            "Кожна поразка — це крок до перемоги. — Томас Едісон",
+            "Тільки той, хто ризикує, може досягти великого. — Роберт Ф. Кеннеді",
+            "Світ належить тому, хто наважиться. — Наполеон"
+        ];
 
+        const button = document.getElementById("myButton");
+        const quoteDiv = document.getElementById("quote");
+
+        button.addEventListener("click", function () {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            quoteDiv.textContent = quotes[randomIndex];
+        });
+    });
+</script>
 
            <script>
     document.getElementById('myButton').addEventListener('click', function() {
